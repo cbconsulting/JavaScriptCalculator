@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>JavaScript Calculator</h1>
+    <div id="calc">
+        <form>
+            <input type="text" id="screen" disabled>
+            <br>
+            <input type="button" value="C" id="key" onclick="sendToScreen('c')">
+            <input type="button" value="CE" id="key" onclick="clearOne('')">
+            <input type="button" value="&radic;" id="key" onclick="Sqrt('b')">
+            <input type="button" value="+" id="key" onclick="sendToScreen('+')">
+            <br>
+            <input type="button" value="7" id="key" onclick="sendToScreen('7')">
+            <input type="button" value="8" id="key" onclick="sendToScreen('8')">
+            <input type="button" value="9" id="key" onclick="sendToScreen('9')">
+            <input type="button" value="-" id="key" onclick="sendToScreen('-')">
+            <br>
+            <input type="button" value="4" id="key" onclick="sendToScreen('4')">
+            <input type="button" value="5" id="key" onclick="sendToScreen('5')">
+            <input type="button" value="6" id="key" onclick="sendToScreen('6')">
+            <input type="button" value="*" id="key" onclick="sendToScreen('*')">
+            <br>
+            <input type="button" value="1" id="key" onclick="sendToScreen('1')">
+            <input type="button" value="2" id="key" onclick="sendToScreen('2')">
+            <input type="button" value="3" id="key" onclick="sendToScreen('3')">
+            <input type="button" value="/" id="key" onclick="sendToScreen('/')">
+            <br>
+            <input type="button" value="0" id="key" onclick="sendToScreen('0')">
+            <input type="button" value="." id="key" onclick="sendToScreen('.')">
+            <input type="button" value="=" id="equals" onclick="qual()">
+        </form>
+        <i class="fa fa-chevron-left" aria-hidden="true"></i><b>Put a helmet on!</b><i class="fa fa-chevron-right" aria-hidden="true"></i>
+        <hr>
+        <footer id="footer" class="text-center">
+            <div class="container">
+                Design by:
+                <a href="https://www.linkedin.com/in/cory-b-32902a32/">Cory Bowles</a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- PrefixFree -->
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js "></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
